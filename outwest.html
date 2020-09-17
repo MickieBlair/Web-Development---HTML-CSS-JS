@@ -1,0 +1,141 @@
+
+<!--Final Project Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head section contains title,meta tags, and links to stylesheet and favicon-->
+<title> Mickie Blair Photography - Out West</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Out West Adventure - Mickie Blair Photography.">
+<link rel="stylesheet" href="csslast.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!--javascript for previous page-->
+<script> function goback() {window.history.back()}</script>
+</head>
+<body>
+<div id="wrapper">
+<!--div for top of page fragment identifier-->
+<div id="top"></div>
+<!--header with logo-->
+<header>
+<h1>Mickie Blair Photography</h1>
+</header>
+<!--havigation menu-->
+<div id="navbar">
+<ul>
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="#"> Image Gallery </a>
+		<ul class="dropdown1">
+			<li><a href="landscapes.html"> Landscapes </a></li>
+			<li><a href="wildlife.html"> Wildlife </a></li>
+			<li><a href="flowersandplants.html"> Flowers and Plants</a></li>
+			<li><a href="thelittlethings.html">The Little Things</a></li>
+		</ul>
+	</li>
+	<li><a href="#"> Adventures </a>
+		<ul class="dropdown2">
+			<li><a href="appalachiantrail.html">Appalachian Trail</a></li>
+			<li><a href="cumberlandisland.html">Cumberland Island</a></li>
+			<li><a href="outwest.html">Out West</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="#"> About</a>
+		<ul class="dropdown3">
+			<li><a href="about.html">Biography</a></li>
+			<li><a href="contact.html">Contact/FAQs</a></li>
+			
+		</ul>
+</ul>
+</div>
+<!--photo divison, displayed on large screens only-->
+<div id="homephoto"><img src="images/biggrayson.jpg" alt="Mickie Blair Photograpy" class="responsive"></div>
+<!--main element for page content-->
+<main>
+<!--div element for page text-->
+ <div class="content">
+ <div id="about">
+<h2>Adventure Out West</h2>
+<p> 
+In November of 2016, I took my first trip out west.  I wanted to be adventourous and see things I had never seen before. I was absolutely amazed by the different scenery and can't wait to visit again. These were my stops along the way!
+</p>
+<div id="stops">
+<ul>
+<li> <a href="https://tpwd.texas.gov/state-parks/tyler" class="externallink">Tyler State Park-Texas</a>
+</li>
+<li>  <a href="http://www.emnrd.state.nm.us/SPD/rockhoundstatepark.html" class="externallink">Rockhound State Park-New Mexico </a>
+</li>
+<li>  <a href="https://www.blm.gov/visit/la-posa-long-term-visitor-area" class="externallink">Bureau of Land Management La Posa-Arizona </a>
+</li>
+<li>  <a href="https://www.fws.gov/refuge/kofa/" class="externallink">Kofa Wildlife Refuge-Arizona </a>
+</li>
+<li>  <a href="http://www.parks.ca.gov/?page_id=639" class="externallink">Salton Sea-California </a>
+</li>
+<li>  <a href="https://azstateparks.com/homolovi/" class="externallink">Homolovi State Park-Arizona </a>
+</li>
+<li>  <a href="https://tpwd.texas.gov/state-parks/palo-duro-canyon" class="externallink">Palo Duro Canyon State Park-Texas </a>
+</li>
+<li> <a href="https://www.arkansasstateparks.com/parks/lake-fort-smith-state-park" class="externallink">Lake Fork Smith State Park-Arkansas </a>
+</li>
+</ul> 
+</div>
+
+
+ </div>
+ </div>
+   <!-- photo divisions-->
+ <div id="aboutphotoleft1">
+<img src="images/quartzsitesunset.jpg" alt="Mickie Blair Photograpy" id="aboutphotoleftimg1" class="responsive">
+</div>
+
+ <div id="aboutphotoright1">
+<img src="images/salton.jpg" alt="Mickie Blair Photograpy" id="aboutphotorightimg1" class="responsive">
+</div>
+<div class="clearfloat"></div>
+
+ <div id="aboutphotoleft2">
+<img src="images/crystalhill.jpg" alt="Mickie Blair Photograpy" id="aboutphotoleftimg2" class="responsive">
+</div>
+
+<div id="aboutphotoright2">
+<img src="images/palolonghorn.jpg" alt="Mickie Blair Photograpy" id="aboutphotorightimg2" class="responsive">
+</div>
+ 
+<div class="clearfloat"></div>
+
+ <!--div element for bottom navigation-->
+<div id="bottomnav">
+
+<ul>
+
+<li><a href="siteindex.html">Site Index</a></li>
+<li><a href="contact.html">Contact</a>	</li>
+<li><input type="button" id="javabutton" value="Previous Page" onclick="goback()"/></li>
+<li><a href="#top">Top of Page</a></li>
+
+</ul>
+</div>
+
+ <!--div element for newsletter updates-->
+<div id="updatesdiv">
+<h3>Updates on My Adventures!</h3>
+<form name="updates" method="post" action="mailto:contact@mickieblair.com" id="updatesform">
+	<label for="updatesemail">Email Address:</label> 
+	<input type="email" name="updatesemail" id="updatesemail" size="30" >
+	<input id="updatessubmit" type="submit" value="Sign Me Up!">
+	</form>
+</div>
+
+</main>
+
+ <!--footer with email hyperlink-->
+<footer>
+ Copyright &copy; 2019 Mickie Blair Photography<br>
+<a href="mailto:contact@mickieblair.com">Email: contact@mickieblair.com</a><br>
+</footer>
+
+</div>
+</body>
+</html>

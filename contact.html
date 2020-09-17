@@ -1,0 +1,270 @@
+<!--Final Project Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head section contains title,meta tags, and links to stylesheet and favicon-->
+<title> Mickie Blair Photography - FAQs/Contact</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Frequently Asked Questions and Contact Information- Mickie Blair Photography">
+<link rel="stylesheet" href="csslast.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!--javascript for previous page-->
+<script> function goback() {window.history.back()}</script>
+</head>
+<body>
+<div id="wrapper">
+<!--div for top of page fragment identifier-->
+<div id="top"></div>
+<!--header with logo-->
+<header>
+<h1>Mickie Blair Photography</h1>
+</header>
+<!--havigation menu-->
+<div id="navbar">
+	<ul>
+		<li><a href="index.html"> Home </a></li>
+		<li><a href="#"> Image Gallery </a>
+			<ul class="dropdown1">
+			<li><a href="landscapes.html"> Landscapes </a></li>
+			<li><a href="wildlife.html"> Wildlife </a></li>
+			<li><a href="flowersandplants.html"> Flowers and Plants</a></li>
+			<li><a href="thelittlethings.html">The Little Things</a></li>
+			</ul>
+		</li>
+		<li><a href="#"> Adventures </a>
+			<ul class="dropdown2">
+				<li><a href="appalachiantrail.html">Appalachian Trail</a></li>
+				<li><a href="cumberlandisland.html">Cumberland Island</a></li>
+				<li><a href="outwest.html">Out West</a></li>
+				
+			</ul>
+		</li>
+		<li><a href="#"> About</a>
+			<ul class="dropdown3">
+				<li><a href="about.html">Biography</a></li>
+				<li><a href="contact.html">Contact/FAQs</a></li>
+				
+			</ul>
+	</ul>
+
+<!--photo divison, displayed on large screens only-->
+</div>
+<div id="homephoto"><img src="images/biggrayson.jpg" alt="Mickie Blair Photograpy" class="responsive"></div>
+<!--main element for page content-->
+
+<main>
+<!--div element for page text-->
+ <div class="content">
+
+<div id="faqs"> 
+ <h3>Frequently Asked Questions</h3>
+<!-- script to make a the answers to the faqs-->
+<script>
+
+function toggleElement(id)
+{
+    if(document.getElementById(id).style.display == 'none')
+    {
+        document.getElementById(id).style.display = '';
+    }
+    else
+    {
+        document.getElementById(id).style.display = 'none';
+    }
+}
+</script>
+
+<ul id="questions">
+<li>
+<p>
+<a href="javascript:toggleElement('a1')" class="nounderline">What kind of camera am I using?</a>
+</p>
+<div id="a1" style="display:none">
+All of the photos on this page were taken with Nikon Cameras.  My first DSLR was a Nikon D5100 and I am currently using a Nikon D5500.
+</div>
+</li>
+
+<li>
+<p>
+<a href="javascript:toggleElement('a2')" class="nounderline" >What lenses am I using?</a>
+</p>
+<div id="a2" style="display:none">
+When backpacking, I only carry one lens.  I currently have a Tamron 16-300mm which I carried on my 2018 trips.  Prior to 2017, I used a Sigma 18-250mm lens.
+</div>
+ </li>
+ 
+ <li>
+<p>
+<a href="javascript:toggleElement('a3')" class="nounderline">How do I carry my camera?</a>
+</p>
+<div id="a3" style="display:none">
+I use a Peak Design Capture clip on my backpack strap.  I absolutely love it.  My camera is always handy.  For more information about the clip, please visit <a href="https://www.peakdesign.com/collections/clips" class="externallink"> Peak Design - Camera Clips</a>.
+</div>
+</li>
+
+<li>
+<p>
+<a href="javascript:toggleElement('a4')" class="nounderline">How did I keep my camera dry on the trail?</a>
+</p>
+<div id="a4" style="display:none">
+Pretty much nothing stays completely dry on the Appalachian Trail, but I managed to keep my camera mostly dry with a simple light weight dry sack.  I also carried a gallon ziplock freezer bag as extra protection in the torrential rains.   My other piece of gear to help with condensation and humidity was the mixed silca gel dessicant packets.
+</div>
+</li>
+
+<li>
+<p>
+<a href="javascript:toggleElement('a5')" class="nounderline">Do I have any more trips planned?</a>
+</p>
+<div id="a5" style="display:none">
+I am currently working and going to school.  Once I have graduated, I do plan on returning to the Appalachian Trail.  I am not sure if I try to thru-hike again or if I will just finish my remaining 500 miles.
+</div>
+</li>
+</ul>
+</div>
+</div>
+
+<div id="contact">
+
+<h4> 
+For comments or questions:</h4>
+<!-- contact form-->
+<form name="contactform" method="post" id="contactform" action="mailto:contact@mickieblair.com">
+
+	<label for="name">Name: </label>
+	<input type="text" name="name" id="name">
+	
+    <label for="commentsemail">Email:</label>
+	<input type="email" name="email" id="commentsemail">
+	
+	<label for="comments">Comments:</label><br>
+	<textarea name="comments" id="comments"></textarea><br>
+    <input id="commentssubmit" type="submit" value="Submit" >
+	
+	
+</form>
+</div>
+<div id="contactphoto">
+<img src="images/vertpurple.jpg" alt="Mickie Blair Photograpy" id="contactimg" class="responsive">
+</div>
+
+<br class="clearfloat">
+
+<div id="feedback">
+
+<h3>I would love to know more...</h3>
+<!--form for feedback-->
+<form name="survey" method="post" id="survey" action="mailto:contact@mickieblair.com">
+
+<div id="foundby">
+<!--script to make textbook appear if other is chosen-->
+<script>
+function showfield(name){
+  if(name=='Other')document.getElementById('other').innerHTML='Other: <input type="text" name="other" />';
+  else document.getElementById('other').innerHTML='';
+}
+</script>
+<label for="referredby"> How did you find my photography?</label><br>
+<select name="referredby" id="referredby" onchange="showfield(this.options[this.selectedIndex].value)">
+<option selected="selected">Please select ...</option>
+<option value="facebook">Facebook</option>
+<option value="trailjournals">Trail Journals</option>
+<option value="wordofmouth">Word of Mouth</option>
+<option value="Other">Other</option>
+</select>
+<div id="other"></div>
+</div>
+
+
+<div id="preferences">
+<label>Which subjects you would like to see more of.</label><br>
+<!--table to format checkboxes-->
+<table id="checkboxpref">
+<tr>
+	<td><input type="checkbox" name="landscapes" id="cboxlandscapes" value="yes"> <label for="cboxlandscapes"> Landscapes</label>
+	</td>
+
+	<td><input type="checkbox" name="wildlife" id="cboxwildlife" value="yes"> <label for="cboxwildlife">Wildlife</label>
+	</td>
+	
+</tr>
+
+<tr>
+
+	<td><input type="checkbox" name="plants" id="cboxplants" value="yes"> <label for="cboxplants">Flowers and Plants</label>
+	</td>
+
+	<td><input type="checkbox" name="littlethings" id="cboxlittlethings" value="yes"> <label for="cboxlittlethings">The Little Things</label>
+	</td>
+
+
+</tr>
+
+<tr>
+	<td><input type="checkbox" name="artsy" id="cboxartsy" value="yes"> <label for="cboxartsy">Creative Photographs</label>
+	</td>
+
+	<td><input type="checkbox" name="other" id="cboxother" value="yes"> <label for="cboxother">Other Suggestions</label>
+	</td>
+</tr>
+
+<tr>
+	<td colspan="2"><label for="suggestions">Please Describe:.</label> <br>
+	<textarea name="suggestions" id="suggestions"></textarea>
+	</td>
+</tr>
+</table>
+
+</div>
+
+
+<label> What type of device do you the most to view this website?</label><br>
+<div id="viewingdevicediv">	
+<input type="radio" name="device" id="smartphone" value="smartphone"><label for="smartphone"> Smart Phone</label>
+<input type="radio" name="device" id="tablet" value="tablet"><label for="tablet"> Tablet</label>
+<input type="radio" name="device" id="laptop" value="laptop"><label for="laptop"> Laptop</label>
+<input type="radio" name="device" id="desktop" value="desktop"><label for="desktop"> Desktop</label>
+</div>
+
+<input id="surveyssubmit" type="submit" value="Submit" >
+
+</form>
+</div>
+
+<!--div element for bottom navigation-->
+<div id="bottomnav">
+
+<ul>
+
+<li><a href="siteindex.html">Site Index</a></li>
+<li><a href="contact.html">Contact</a>	</li>
+<li><input type="button" id="javabutton" value="Previous Page" onclick="goback()"/></li>
+<li><a href="#top">Top of Page</a></li>
+
+</ul>
+</div>
+<div class="clearfloat"></div>
+
+<!--div element for newsletter updates-->
+<div id="updatesdiv">
+<h3>Updates on My Adventures!</h3>
+<form name="updates" method="post" action="mailto:contact@mickieblair.com" id="updatesform">
+	<label for="updatesemail">Email Address:</label> 
+	<input type="email" name="updatesemail" id="updatesemail" size="30" >
+	<input id="updatessubmit" type="submit" value="Sign Me Up!">
+</form>
+</div>
+
+</main>
+<!--footer with email hyperlink-->
+<footer>
+ Copyright &copy; 2019 Mickie Blair Photography<br>
+<a href="mailto:contact@mickieblair.com">Email: contact@mickieblair.com</a><br>
+</footer>
+
+</div>
+</body>
+</html>
+
+

@@ -1,0 +1,152 @@
+
+<!--Final Project Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head section contains title,meta tags, and links to stylesheet and favicon-->
+<title> Mickie Blair Photography - Appalachian Trail</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Appalachian Trail Adventure - Mickie Blair Photography.">
+<link rel="stylesheet" href="csslast.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<!--javascript for previous page-->
+<script> function goback() {window.history.back()}</script>
+</head>
+<body>
+<div id="wrapper">
+<!--div for top of page fragment identifier-->
+<div id="top"></div>
+<!--header with logo-->
+<header>
+<h1>Mickie Blair Photography</h1>
+</header>
+<!--havigation menu-->
+<div id="navbar">
+<ul>
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="#"> Image Gallery </a>
+		<ul class="dropdown1">
+			<li><a href="landscapes.html"> Landscapes </a></li>
+			<li><a href="wildlife.html"> Wildlife </a></li>
+			<li><a href="flowersandplants.html"> Flowers and Plants</a></li>
+			<li><a href="thelittlethings.html">The Little Things</a></li>
+		</ul>
+	</li>
+	<li><a href="#"> Adventures </a>
+		<ul class="dropdown2">
+			<li><a href="appalachiantrail.html">Appalachian Trail</a></li>
+			<li><a href="cumberlandisland.html">Cumberland Island</a></li>
+			<li><a href="outwest.html">Out West</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="#"> About</a>
+		<ul class="dropdown3">
+			<li><a href="about.html">Biography</a></li>
+			<li><a href="contact.html">Contact/FAQs</a></li>
+			
+		</ul>
+</ul>
+
+</div>
+<!--photo divison, displayed on large screens only-->
+<div id="homephoto"><img src="images/biggrayson.jpg" alt="Mickie Blair Photograpy" class="responsive"></div>
+<!--main element for page content-->
+<main>
+<!--div element for page text-->
+ <div class="content">
+ <div id="about">
+<h2>Appalachian Trail</h2>
+<p> 
+From Georgia to Maine, the Appalachian Trail holds the most wonderful sites.  Over the last few years, I have walked around 2500 miles.  While I haven't seen every mile at least once, I plan on continuing that adventure at every opportunity. The trail is marked by white blazes and I hope to see them all .
+</p>
+
+
+ </div>
+ </div>
+ 
+<div id="atwildlife">
+<h3> Wildlife on the Appalachian Trail</h3>
+<!--div audio element-->
+ <div id="audio">
+<img src="images/owl.jpg" alt="Mickie Blair Photograpy" id="aboutphotorightimg1" class="responsive">
+
+<audio controls="controls">
+<source src="images/owlsounds.mp3" type="audio/mpeg">
+<source src="images/owlsounds.ogg" type="audio/ogg">
+<a href="images/owlsounds.mp3"> Download the Audio File</a> (MP3)
+</audio>
+<h6>Owls Talking</h6>
+</div>  
+
+<!--div video element-->
+ <div id="video">
+ 
+<video controls="controls" poster="images/beavers2.jpg" class="responsive">
+<source src="images/beavers.mp4#t=0.2" type="video/mp4">
+<source src="images/beavers.ogv" type="video/ogg">
+<a href="images/beavers.mp4"> Beavers Playing</a> (.mp4)
+</video>
+<h6>Beavers Playing</h6>
+</div>
+
+
+
+</div>
+
+<div class="clearfloat"></div>
+
+<!--div for image map-->
+<div id="atimagemap"> 
+<div id="centeralign">
+
+<h3>Photos on the Trail - Image Map</h3>
+<img src="images/atmap.jpg" alt="Appalachian Trail Map" usemap="#Map" />
+<map name="Map" id="Map">
+    <area alt="Southern Terminus Georgia Springer" title="Image on Springer Mountain - Southern Terminus Georgia" href="images/southernterminus.jpg" shape="rect" coords="7,391,59,447" />
+    <area alt="Mcafee Knob Virginia" title="Image at McAfee Knob in Virginia" href="images/knob.jpg"  shape="rect" coords="38,298,102,360" />
+    <area alt="Harpers Ferry West Virginia" title="Image at the Appalachian Trail Conservancy - West Virginia" href="images/harpersferry.jpg"  shape="rect" coords="50,212,117,275" />
+    <area alt="New York" title="Image in a field in New York" href="images/newyork.jpg"  shape="rect" coords="82,138,161,211" />
+    <area alt="Vermont" title="Image from Stratton Pond in Vermont" href="images/vermont.jpg" shape="rect" coords="76,73,158,128" />
+    <area alt="Northern Terminus Maine Katahdin" title="Image on Mount Katahdin - Northern Terminus Maine" href="images/katahdin.jpg" shape="rect" coords="105,1,173,61" />
+</map>
+</div>
+
+</div>
+<!--div element for bottom navigation-->
+<div id="bottomnav">
+
+<ul>
+
+<li><a href="siteindex.html">Site Index</a></li>
+<li><a href="contact.html">Contact</a>	</li>
+<li><input type="button" id="javabutton" value="Previous Page" onclick="goback()"/></li>
+<li><a href="#top">Top of Page</a></li>
+
+</ul>
+</div>
+<div class="clearfloat"></div>
+
+<!--div element for newsletter updates-->
+<div id="updatesdiv">
+<h3>Updates on My Adventures!</h3>
+<form name="updates" method="post" action="mailto:contact@mickieblair.com" id="updatesform">
+	<label for="updatesemail">Email Address:</label> 
+	<input type="email" name="updatesemail" id="updatesemail" size="30" >
+	<input id="updatessubmit" type="submit" value="Sign Me Up!">
+	</form>
+</div>
+
+</main>
+<!--footer with email hyperlink-->
+<footer>
+ Copyright &copy; 2019 Mickie Blair Photography<br>
+<a href="mailto:contact@mickieblair.com">Email: contact@mickieblair.com</a><br>
+</footer>
+
+</div>
+</body>
+</html>
+

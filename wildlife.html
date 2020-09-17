@@ -1,0 +1,152 @@
+
+<!--Final Project Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head section contains title,meta tags, and links to stylesheet and favicon-->
+<title> Mickie Blair Photography - Wildlife Image Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mickie Blair Photography - Wildlife Image Gallery">
+<link rel="stylesheet" href="csslast.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--script for image gallery-->
+<script>
+$(document).ready(function(){
+	$('#gallery a').click(function(){
+		var galleryHref = $(this).attr('href');
+		var galleryAlt = $(this).attr('title');
+		$('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		$('figcaption').html(galleryAlt);
+		 return false;
+	});
+});
+</script>
+<!--javascript for previous page-->
+<script> function goback() {window.history.back()}</script>
+</head>
+<body>
+<div id="wrapper">
+<!--div for top of page fragment identifier-->
+<div id="top"></div>
+<!--header with logo-->
+<header>
+<h1>Mickie Blair Photography</h1>
+</header>
+<!--havigation menu-->
+<div id="navbar">
+<ul>
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="#"> Image Gallery </a>
+		<ul class="dropdown1">
+			<li><a href="landscapes.html"> Landscapes </a></li>
+			<li><a href="wildlife.html"> Wildlife </a></li>
+			<li><a href="flowersandplants.html"> Flowers and Plants</a></li>
+			<li><a href="thelittlethings.html">The Little Things</a></li>
+		</ul>
+	</li>
+	<li><a href="#"> Adventures </a>
+		<ul class="dropdown2">
+			<li><a href="appalachiantrail.html">Appalachian Trail</a></li>
+			<li><a href="cumberlandisland.html">Cumberland Island</a></li>
+			<li><a href="outwest.html">Out West</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="#"> About</a>
+		<ul class="dropdown3">
+			<li><a href="about.html">Biography</a></li>
+			<li><a href="contact.html">Contact/FAQs</a></li>
+			
+		</ul>
+</ul>
+</div>
+<!--photo divison, displayed on large screens only-->
+<div id="homephoto"><img src="images/biggrayson.jpg" alt="Mickie Blair Photograpy" class="responsive"></div>
+<main>
+<!--image gallery-->
+<div id="gallery">
+<h2>Wildlife</h2>
+ <figure>
+  <img src="images/at3turtles.jpg" class="responsive" alt="Turtles On Log">
+  <figcaption>Turtles On Log</figcaption>
+ </figure>
+
+ <ul>
+   <li>
+     <a href="images/at3turtles.jpg"  title="Turtles On Log"><img src="images/at3turtlessmall.jpg" width="75" height="50"  alt="Turtles On Log"></a>
+   </li>
+   <li>
+     <a href="images/atbear.jpg" title="Black Bear"><img src="images/atbearsmall.jpg" width="75" height="50" alt="Black Bear"></a>  
+   </li>
+   <li>
+     <a href="images/atdeer.jpg" title="Deer"><img src="images/atdeersmall.jpg" width="75" height="50" alt="Deer"></a>
+   </li>
+   <li>
+     <a href="images/atfrog.jpg" title="Frog"><img src="images/atfrogsmall.jpg" width="75" height="50" alt="Frog"></a>
+   </li>
+   <li>
+     <a href="images/atowl.jpg" title="Owl"><img src="images/atowlsmall.jpg" width="75" height="50" alt="Owl"></a>
+  </li>
+  <li>
+    <a href="images/atredeft.jpg" title="Red Eft"><img src="images/atredeftsmall.jpg" width="75" height="50" alt="Red Eft"></a>
+  </li>
+     <li>
+     <a href="images/atsnake.jpg" title="Snake Sunning"><img src="images/atsnakesmall.jpg" width="75" height="50" alt="Snake Sunning"></a>
+  </li>
+  <li>
+    <a href="images/atwoodpecker.jpg" title="Woodpecker"><img src="images/atwoodpeckersmall.jpg" width="75" height="50" alt="Woodpecker"></a>
+  </li>
+    <li>
+    <a href="images/cumberlandbird.jpg" title="Beach Bird"><img src="images/cumberlandbirdsmall.jpg" width="75" height="50" alt="Beach Bird"></a>
+  </li>
+    <li>
+    <a href="images/saltonbird.jpg" title="Salton Sea Bird"><img src="images/saltonbirdsmall.jpg" width="75" height="50" alt="Salton Sea Bird"></a>
+  </li>
+    <li>
+    <a href="images/westbird.jpg" title="Desert Bird"><img src="images/westbirdsmall.jpg" width="75" height="50" alt="Desert Bird"></a>
+  </li>
+    <li>
+    <a href="images/atmouse.jpg" title="Mouse"><img src="images/atmousesmall.jpg" width="75" height="50" alt="Mouse"></a>
+  </li>
+  
+ </ul>
+
+</div>
+
+<!--div element for bottom navigation-->
+<div id="bottomnav">
+
+<ul>
+
+<li><a href="siteindex.html">Site Index</a></li>
+<li><a href="contact.html">Contact</a>	</li>
+<li><input type="button" id="javabutton" value="Previous Page" onclick="goback()"/></li>
+<li><a href="#top">Top of Page</a></li>
+
+</ul>
+</div>
+
+ <!--div element for newsletter updates-->
+<div id="updatesdiv">
+<h3>Updates on My Adventures!</h3>
+<form name="updates" method="post" action="mailto:contact@mickieblair.com" id="updatesform">
+	<label for="updatesemail">Email Address:</label> 
+	<input type="email" name="updatesemail" id="updatesemail" size="30" >
+	<input id="updatessubmit" type="submit" value="Sign Me Up!">
+	</form>
+</div>
+
+</main>
+
+ <!--footer with email hyperlink-->
+<footer>
+ Copyright &copy; 2019 Mickie Blair Photography<br>
+<a href="mailto:contact@mickieblair.com">Email: contact@mickieblair.com</a><br>
+</footer>
+
+</div>
+</body>
+</html>

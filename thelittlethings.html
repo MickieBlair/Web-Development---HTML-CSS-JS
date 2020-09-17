@@ -1,0 +1,140 @@
+
+<!--Final Project Website-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!--head section contains title,meta tags, and links to stylesheet and favicon-->
+<title> Mickie Blair Photography - The Little Things Image Gallery</title>
+<meta charset="utf-8">
+<meta name="viewport"
+content="width=device-width, initial-scale=1.0">
+<meta name="description" content="Mickie Blair Photography - The Little Things Image Gallery">
+<link rel="stylesheet" href="csslast.css">
+<link rel="icon" href="images/favicon.ico" type="image/x-icon">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<!--script for image gallery-->
+<script>
+$(document).ready(function(){
+	$('#gallery a').click(function(){
+		var galleryHref = $(this).attr('href');
+		var galleryAlt = $(this).attr('title');
+		$('figure img').attr({ src: galleryHref, alt: galleryAlt });
+		$('figcaption').html(galleryAlt);
+		 return false;
+	});
+});
+</script>
+<!--javascript for previous page-->
+<script> function goback() {window.history.back()}</script>
+</head>
+<body>
+<div id="wrapper">
+<!--div for top of page fragment identifier-->
+<div id="top"></div>
+<!--header with logo-->
+<header>
+<h1>Mickie Blair Photography</h1>
+</header>
+<!--havigation menu-->
+<div id="navbar">
+<ul>
+	<li><a href="index.html"> Home </a></li>
+	<li><a href="#"> Image Gallery </a>
+		<ul class="dropdown1">
+			<li><a href="landscapes.html"> Landscapes </a></li>
+			<li><a href="wildlife.html"> Wildlife </a></li>
+			<li><a href="flowersandplants.html"> Flowers and Plants</a></li>
+			<li><a href="thelittlethings.html">The Little Things</a></li>
+		</ul>
+	</li>
+	<li><a href="#"> Adventures </a>
+		<ul class="dropdown2">
+			<li><a href="appalachiantrail.html">Appalachian Trail</a></li>
+			<li><a href="cumberlandisland.html">Cumberland Island</a></li>
+			<li><a href="outwest.html">Out West</a></li>
+			
+		</ul>
+	</li>
+	<li><a href="#"> About</a>
+		<ul class="dropdown3">
+			<li><a href="about.html">Biography</a></li>
+			<li><a href="contact.html">Contact/FAQs</a></li>
+			
+		</ul>
+</ul>
+</div>
+<!--photo divison, displayed on large screens only-->
+<div id="homephoto"><img src="images/biggrayson.jpg" alt="Mickie Blair Photograpy" class="responsive"></div>
+<main>
+<!--image gallery-->
+<div id="gallery">
+<h2>The Little Things</h2>
+ <figure>
+  <img src="images/atdew.jpg" class="responsive" alt="Dew on Flowers">
+  <figcaption>Dew on Flowers</figcaption>
+ </figure>
+
+ <ul>
+   <li>
+     <a href="images/atdew.jpg"  title="Dew on Flowers"><img src="images/atdewsmall.jpg" width="75" height="50"  alt="Dew on Flowers"></a>
+   </li>
+   <li>
+     <a href="images/atdragon.jpg" title="Dragonfly"><img src="images/atdragonsmall.jpg" width="75" height="50" alt="Dragonfly"></a>  
+   </li>
+   <li>
+     <a href="images/atmoth1.jpg" title="Moth"><img src="images/atmoth1small.jpg" width="75" height="50" alt="Moth"></a>
+   </li>
+   <li>
+     <a href="images/atmoth2.jpg" title="Moth On Flower"><img src="images/atmoth2small.jpg" width="75" height="50" alt="Moth On Flower"></a>
+   </li>
+   <li>
+     <a href="images/atspider.jpg" title="Spider On Web"><img src="images/atspidersmall.jpg" width="75" height="50" alt="Spider On Web"></a>
+  </li>
+  <li>
+    <a href="images/atwaterdrops.jpg" title="Rain Drops on Pine Needles"><img src="images/atwaterdropssmall.jpg" width="75" height="50" alt="Rain Drops on Pine Needles"></a>
+  </li>
+     <li>
+     <a href="images/cumberlandfern.jpg" title="Fern Frond"><img src="images/cumberlandfernsmall.jpg" width="75" height="50" alt="Fern Frond"></a>
+  </li>
+  <li>
+    <a href="images/cumberlandshell.jpg" title="Shell On Beach"><img src="images/cumberlandshellsmall.jpg" width="75" height="50" alt="Shell On Beach"></a>
+  </li>
+  
+ </ul>
+
+</div>
+
+<!--div element for bottom navigation-->
+<div id="bottomnav">
+
+<ul>
+
+<li><a href="siteindex.html">Site Index</a></li>
+<li><a href="contact.html">Contact</a>	</li>
+<li><input type="button" id="javabutton" value="Previous Page" onclick="goback()"/></li>
+<li><a href="#top">Top of Page</a></li>
+
+</ul>
+</div>
+
+ <!--div element for newsletter updates-->
+<div id="updatesdiv">
+<h3>Updates on My Adventures!</h3>
+<form name="updates" method="post" action="mailto:contact@mickieblair.com" id="updatesform">
+	<label for="updatesemail">Email Address:</label> 
+	<input type="email" name="updatesemail" id="updatesemail" size="30" >
+	<input id="updatessubmit" type="submit" value="Sign Me Up!">
+	</form>
+</div>
+
+</main>
+
+ <!--footer with email hyperlink-->
+<footer>
+ Copyright &copy; 2019 Mickie Blair Photography<br>
+<a href="mailto:contact@mickieblair.com">Email: contact@mickieblair.com</a><br>
+</footer>
+
+</div>
+</body>
+</html>
